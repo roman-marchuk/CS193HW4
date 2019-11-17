@@ -4,7 +4,7 @@
 In this assignment, you will be adding a feature to a basic calculator function using a feature branch. After you complete your feature, you will learn how to resolve a merge conflict when you try to merge the feature into the master branch. 
  
 ## When is this due?
-This homework will be due on Monday, 
+This homework will be due on Monday, 11/25
  
 ## When will I know I'm done?
 Advice: read the steps!!
@@ -57,7 +57,7 @@ public static double basicCalculator(Operation operation, int num1, int num2){
 ```
 At the bottom of the screen, click the green button that says *Commit changes*
 
-## Step 4: Open a Pull Request
+## Step 5: Open a Pull Request
 
 Now that we have pushed our changes to our feature branch, we need to merge these changes into the master branch. In a web browser, navigate to your homework 5 repository. If you did everything correctly up to this point, GitHub should already display the `useCaseSwitch` branch as a recently pushed to branch as shown in the image below: 
 
@@ -75,7 +75,7 @@ As seen in the photo below, Github has found a merge conflict after your pesky c
 
 Once you have reviewed all the options, click the big green `Create pull request` button.
 
-## Step 7: Fixing the Merge Conflict
+## Step 6: Fixing the Merge Conflict
 
 As you can probably guess, you'll more often than not be working on a project with more people than just yourself. With multiple people working in the same files, a phenomenon known as a "merge conflict" is bound to happen. A merge conflict is a instance where a change in another branch cannot be merged automatically by git with the changes you are trying to merge.
 

@@ -28,7 +28,7 @@ The method `basicCalculator` takes in an operator and two numbers and returns a 
 Once you are satisfied that you have a functioning calculator that uses case-switch statements, add and commit your changes. Make sure you push your changes to GitHub as well! (Remember, since we created a new branch, you will need to run `git push --set-upstream origin useCaseSwitch` to set the upstream branch)
 
 ## Step 4: Your Coworker Makes a Scene!
-In this part, you'll be playing the part of a pesky coworker who decided to ruin the calculator code with lies! Go to your homework 5 respository on github *browser*. Click on test.java and then on the pencil icon to edit the file in the browser. Replace the basicCalculator function with the following code:
+In this part, you'll be playing the part of a pesky coworker who decided to ruin the calculator code with lies! Go to your homework 5 respository on the **browser version github**. Click on test.java and then on the pencil icon to edit the file in the browser. Replace the basicCalculator function with the following code:
 
 ```
 public static double basicCalculator(Operation operation, int num1, int num2){

@@ -19,6 +19,7 @@ public class Test1 {
                 result = num1 * num2;
                 break;
             case DIVIDE:
+
                 result = num1 / num2;
                 break;
         }

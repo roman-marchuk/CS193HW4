@@ -71,7 +71,7 @@ The first option, `base` is the branch that we want these changes to go to. In o
 
 As seen in the photo below, Github has found a merge conflict after your pesky coworker changed the master branch. This means that Github cannot automatically merge your feature branch into your master branch. Don't worry, though- we'll still create the pull request! We will deal with the merge conflict in the next step. 
 
-![alt text](images\pr.PNG)
+![alt text](images/pr.PNG)
 
 Once you have reviewed all the options, click the big green `Create pull request` button.
 

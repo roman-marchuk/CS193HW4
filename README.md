@@ -61,7 +61,7 @@ At the bottom of the screen, click the green button that says *Commit changes*
 
 Now that we have pushed our changes to our feature branch, we need to merge these changes into the master branch. In a web browser, navigate to your homework 5 repository. If you did everything correctly up to this point, GitHub should already display the `useCaseSwitch` branch as a recently pushed to branch as shown in the image below: 
 
-![alt text](https://i.imgur.com/aB6iS9v.png)
+![alt text](https://imgur.com/a/he8Jg80)
 
 What we want to do next is called opening a *Pull Request*. A pull request is essentially a set of proposed changes to the main repository from a fork that can be looked over, reviewed, and commented on by the other contributors to the main repository.
 

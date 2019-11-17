@@ -8,9 +8,19 @@ public class Test1 {
     public static double basicCalculator(Operation operation, int num1, int num2){
         double result = 0;
 
-        //ughhhhhhhhhhhhhhhh
-        if(operation == Operation.ADD) {
-            System.out.println("fjkdslfjkdslfjsdl");
+        switch(operation) {
+            case ADD:
+                result = num1 + num2;
+                break;
+            case SUBTRACT:
+                result = num1 - num2;
+                break;
+            case MULTIPLY:
+                result = num1 * num2;
+                break;
+            case DIVIDE:
+                result = num1 / num2;
+                break;
         }
 
         return result;

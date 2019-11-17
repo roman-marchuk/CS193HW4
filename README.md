@@ -30,7 +30,8 @@ Once you are satisfied that you have a functioning calculator that uses case-swi
 ## Step 4: Your Coworker Makes a Scene!
 In this part, you'll be playing the part of a pesky coworker who decided to ruin the calculator code with lies! Go to your homework 5 respository on github *browser*. Click on test.java and then on the pencil icon to edit the file in the browser. Replace the basicCalculator function with the following code:
 
-`public static double basicCalculator(Operation operation, int num1, int num2){
+`
+public static double basicCalculator(Operation operation, int num1, int num2){
         double result = 0;
 
         if(operation == Operation.ADD) {
@@ -53,6 +54,7 @@ In this part, you'll be playing the part of a pesky coworker who decided to ruin
 
         return result;
     }
+    
 `
 
 

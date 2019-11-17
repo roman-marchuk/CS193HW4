@@ -12,7 +12,7 @@ Advice: read the steps!!
 You should be finished when the implementation of the calculator function is in your master branch.
  
 ## Step 1: Clone the repository. TODOs exist here
-As you've done before, everything git related usually starts with a clone. Once you have accepted the assignment and downloaded the classroom code, click on the green `clone or download1 button on the top right and copy the https link. **run** the command `git clone <your-https-link>`. As you know, all this command does is to download a copy of the *remote* repository to your *local* machine. 
+As you've done before, everything git related usually starts with a clone. Once you have accepted the assignment and downloaded the classroom code, click on the green `clone or download button on the top right and copy the https link. **run** the command `git clone <your-https-link>`. As you know, all this command does is to download a copy of the *remote* repository to your *local* machine. 
  
 Now if you run `ls`, you should see a directory called `homework-5-individual-<your GitHub username>`. `cd` into this directory and run `ls` again and you should see all the same files that GitHub shows in the browser for this repository. 
 

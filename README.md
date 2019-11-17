@@ -30,7 +30,7 @@ Once you are satisfied that you have a functioning calculator that uses case-swi
 ## Step 4: Your Coworker Makes a Scene!
 In this part, you'll be playing the part of a pesky coworker who decided to ruin the calculator code with lies! Go to your homework 5 respository on github *browser*. Click on test.java and then on the pencil icon to edit the file in the browser. Replace the basicCalculator function with the following code:
 
-`
+```
 public static double basicCalculator(Operation operation, int num1, int num2){
         double result = 0;
 
@@ -54,9 +54,8 @@ public static double basicCalculator(Operation operation, int num1, int num2){
 
         return result;
     }
-    
-`
-
+```
+At the bottom of the screen, click the green button that says *Commit changes*
 
 ## Step 4: Open a Pull Request
 
@@ -68,55 +67,35 @@ What we want to do next is called opening a *Pull Request*. A pull request is es
 
 Click the big green button that says `Compare & pull request` to start this process. You will be taken to a page where you can specify the settings of your pull request. Let's walk through what these are. 
 
-The first option, `base fork` is the copy of the repository that we want these changes to go to. In our case, this is the `Purdue-CS193/lab-6-<Your GitHub Username>` repository. Make sure you have this selected for `base fork`.
+The first option, `base` is the branch that we want these changes to go to. In our case, this is the `master` branch.
 
-The next option, which GitHub just calls `base` is the base branch to which the changes should go. Right now, we want our changes to go straight into the `master` branch of the main repository. Make sure `master` is selected for `base`.
-
-On the other side of the arrow, we have the options for the source of the changes we want. The option `head fork` is the copy of the repository that already contains the changes you want to merge. In our case, this is `<Your GitHub Username>/lab-6-<Your GitHub Username>`. Make sure this option is selected.
-
-Finally, the option titled `compare` is the branch in the `head fork` that contains the changes we want. In our case, this is the topic branch we just made. Select `printThreeTimes` here.
-
-Underneath these options are where you create a title for the Pull Request and write a brief description. Fill these in with an appropriate title and description that tells the reader exactly what changes were made. 
-
-Finally, GitHub handily displays to us the exact commits that will be merged from the `source` branch to the `base` branch, along with a line-by-line diff of the files that contain changes. Review these to ensure only the changes you expect are being merged. 
+As seen in the photo below, Github has found a merge conflict after your pesky coworker changed the master branch. This means that Github cannot automatically merge your feature branch into your master branch. Don't worry, though- we'll still create the pull request! We will deal with the merge conflict in the next step. 
 
 Once you have reviewed all the options, click the big green `Create pull request` button.
 
-## Step 7: Things don't always go smoothly...
+## Step 7: Fixing the Merge Conflict
 
 As you can probably guess, you'll more often than not be working on a project with more people than just yourself. With multiple people working in the same files, a phenomenon known as a "merge conflict" is bound to happen. A merge conflict is a instance where a change in another branch cannot be merged automatically by git with the changes you are trying to merge.
 
 ![alt text](https://developer.atlassian.com/blog/2015/01/a-better-pull-request/merge-conflict.png) 
 
-On the main page for this new pull request, notice how we are unable to merge because of a conflict in `lab6.cpp`. We need to manually resolve this conflict before we can continue. 
-
-To do this, we need to manually `pull` the new changes from the assignment repository `master` branch into our `changeOutputOfProgram` branch on the fork. To do this, perform the following steps: 
-1. Add the assignment repository as a new "remote" respository called "upstream" by running `git remote add upstream https://github.com/Purdue-CS193/lab-6-<Your GitHub Username>`. This command tells git that you have a new GitHub repository that we are calling "upstream"
-2. Make sure you are on the `changeOutputOfProgram` branch and run `git pull upstream master`. This will attempt to merge changes from the `master` branch of the assignment repository into your local `changeOutputOfProgram` branch. As we expected, git will greet you with the following dreadful message:
-
-```
-CONFLICT (content): Merge conflict in lab6.cpp
-Automatic merge failed; fix conflicts and then commit the result.
-```
-
-Open up `lab6.cpp` in a text editor to see what's going on. 
-
-As you can see, since we changed the text output by our program in the assignment repo AND our fork of the repository, git cannot automatically just choose which version of the change to keep. We have to tell it manually. 
-
-git tells us the beginning of the merge conflict with a line that looks like this: `<<<<<<< HEAD` The line immediately following the `HEAD` line is the version of this line from our head branch (in this case our local `changeOutputOfProgram` branch). 
-
-git then displays a line like this: `=======` that signifies the change between the version from the `HEAD` branch and the *base* branch. In this case, the *base* branch is the master branch in our assignment repository. 
-
-Immediately following the line of `=` is the version of the change from the *base* branch, and immediately following this line is a line that looks like: `>>>>>>> 2b431c775e1734008578ebf48c4640b55960da2c`. This long string of numbers and letters is the commit id of the commit that conflicts with our local changes. 
-
-To fix the merge conflict, you need to remove the version of the change that you do not want, and keep the version that you do want. Right now, we want the version that says "Hello, Purdue CS!" You also need to remove the line markers that git added: `<<<<<<< HEAD`, `=======`, and `>>>>>>> 2b431c775e1734008578ebf48c4640b55960da2c`. 
-
-Once you have that done, check that your program still compiles and runs as you expect and then commit this merge by running: `git add lab6.cpp` followed by `git commit`. git will have the commit message already populated for you because this is a merge commit, so you can leave it as is. Now, push your changes and you've resolved your first merge conflict!
-
-Now that the conflict is gone, check back on your pull request page. Refresh the page, and you can now see that you are able to merge these changes into the `master` branch on your assignment repository. Nice! Go ahead and click the merge button and you're done with the lab!
+Your new pull request can be found in the pull request tab. After clicking on it, you can view if your branch can be merged or not. Because of the merge conflict, we cannot automatically merge. You can see this is the case since the pull request page shows the following message:
 
 
-## Step 6: Merge Those Changes!
+We must fix the merge conflict to merge our feature branch to master. Click on the button that says `Resolve conflicts`.
 
-Ok, now that we have made a change, reviewed this change, and addressed its issues, it is time to ACTUALLY merge the changes into our assignment repository. This step is fairly simple. In the main page for our open pull request, towards the bottom there is a big green button titled "Merge pull request". Click on this button and then again on "Confirm merge". Congratulations! Your changes are now incorporated into your assignment repository. 
+git tells us the beginning of the merge conflict with a line that looks like this: `<<<<<<< useCaseSwitch` The line immediately following the `useCaseSwitch` line is the version of this line from our feature branch (in this case our `useCaseSwitch` branch). 
+
+git then displays a line like this: `=======` that signifies the change between the version from the `useCaseSwitch` branch and the *base* branch. In this case, the *base* branch is the master branch in our assignment repository. 
+
+Immediately following the line of `=` is the version of the change from the *base* branch, and immediately following this line is a line that looks like: `>>>>>>> master`. 
+
+To fix the merge conflict, you need to remove the version of the change that you do not want, and keep the version that you do want. Right now, we want the version that uses case switch statements to implement the calculator functions properly. You also need to remove the line markers that git added: `<<<<<<< useCaseSwitch`, `=======`, and `>>>>>>> master`. 
+
+Once you have that done, click the button on the top right that says `mark as resolved`. This will get you a green button that says `Commit merge`. Click this to commit this merge and solve your merge conflict!
+
+Now that the conflict is gone, you will be brought back to the pull request screen. Now you should see the following message:
+
+Click `Merge Pull Request`; this will merge your changes to the master branch. To double check your progress, go back to the master branch and check if your case switch statement is in Test1.java. Good job, you've successfully fixed a merge conflict and merged your feature into the master branch! Your coworker has been fired from your calculator company for messing with the master branch directly.
+
 

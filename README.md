@@ -61,7 +61,7 @@ At the bottom of the screen, click the green button that says *Commit changes*
 
 Now that we have pushed our changes to our feature branch, we need to merge these changes into the master branch. In a web browser, navigate to your homework 5 repository. If you did everything correctly up to this point, GitHub should already display the `useCaseSwitch` branch as a recently pushed to branch as shown in the image below: 
 
-![alt text](images\comp_banner.PNG?raw=true "Title")
+![alt text](images/comp_banner.PNG)
 
 What we want to do next is called opening a *Pull Request*. A pull request is essentially a set of proposed changes to the main repository from a fork that can be looked over, reviewed, and commented on by the other contributors to the main repository.
 
@@ -83,7 +83,7 @@ As you can probably guess, you'll more often than not be working on a project wi
 
 Your new pull request can be found in the pull request tab. After clicking on it, you can view if your branch can be merged or not. Because of the merge conflict, we cannot automatically merge. You can see this is the case since the pull request page shows the following message:
 
-![alt text](images\resolve_conflict.PNG)
+![alt text](images/resolve_conflict.PNG)
 
 We must fix the merge conflict to merge our feature branch to master. Click on the button that says `Resolve conflicts`.
 
@@ -99,7 +99,7 @@ Once you have that done, click the button on the top right that says `mark as re
 
 Now that the conflict is gone, you will be brought back to the pull request screen. Now you should see the following message:
 
-![alt text](images\yay.PNG)
+![alt text](images/yay.PNG)
 
 Click `Merge Pull Request`; this will merge your changes to the master branch. To double check your progress, go back to the master branch and check if your case switch statement is in Test1.java. Good job, you've successfully fixed a merge conflict and merged your feature into the master branch! Your coworker has been fired from your calculator company for messing with the master branch directly.
 

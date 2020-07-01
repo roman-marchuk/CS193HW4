@@ -1,4 +1,4 @@
-# CS193HW5 Individual Assignment
+# CS193HW4 Individual Assignment
  
 ## What is this assignment
 In this assignment, you will be adding a feature to a basic calculator function using a feature branch. After you complete your feature, you will learn how to resolve a merge conflict when you try to merge the feature into the master branch. 

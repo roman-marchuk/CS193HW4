@@ -61,7 +61,7 @@ At the bottom of the screen, click the green button that says *Commit changes*
 
 Now that we have pushed our changes to our feature branch, we need to merge these changes into the master branch. In a web browser, navigate to your homework 5 repository. If you did everything correctly up to this point, GitHub should already display the `useCaseSwitch` branch as a recently pushed to branch as shown in the image below: 
 
-![alt text](images/comp_banner.PNG)
+![alt text](images/open_pr.PNG)
 
 What we want to do next is called opening a *Pull Request*. A pull request is essentially a set of proposed changes to the main repository from a fork that can be looked over, reviewed, and commented on by the other contributors to the main repository.
 
@@ -71,7 +71,7 @@ The first option, `base` is the branch that we want these changes to go to. In o
 
 As seen in the photo below, Github has found a merge conflict after your pesky coworker changed the master branch. This means that Github cannot automatically merge your feature branch into your master branch. Don't worry, though- we'll still create the pull request! We will deal with the merge conflict in the next step. 
 
-![alt text](images/pr.PNG)
+![alt text](images/compare_create_pr.PNG)
 
 Once you have reviewed all the options, click the big green `Create pull request` button.
 

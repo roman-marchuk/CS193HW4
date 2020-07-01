@@ -104,3 +104,4 @@ Now that the conflict is gone, you will be brought back to the pull request scre
 Click `Merge Pull Request`; this will merge your changes to the master branch. To double check your progress, go back to the master branch and check if your case switch statement is in Test1.java. Good job, you've successfully fixed a merge conflict and merged your feature into the master branch! Your coworker has been fired from your calculator company for messing with the master branch directly.
 
 
+//add a temporary line here to create merge conflict

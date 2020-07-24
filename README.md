@@ -14,7 +14,7 @@ You should be finished when the correct implementation of the calculator functio
 ## Step 1: Clone the repository. TODOs exist here
 As you've done before, everything git related usually starts with a clone. Once you have accepted the assignment and downloaded the classroom code, click on the green `clone or download` button on the top right and copy the https link. **Run** the command `git clone <your-https-link>`. As you know, all this command does is to download a copy of the *remote* repository to your *local* machine. 
  
-Now if you run `ls`, you should see a directory called `homework-5-individual-<your GitHub username>`. `cd` into this directory and run `ls` again and you should see all the same files that GitHub shows in the browser for this repository. 
+Now if you run `ls`, you should see a directory called `homework-4-individual-<your GitHub username>`. `cd` into this directory and run `ls` again and you should see all the same files that GitHub shows in the browser for this repository. 
 
 ## Step 2: Create a Feature Branch
 The current calculator uses switch-cases which you can see in Test1.java. However, management has decided that this needs to be implemented using if-else logic. Your job now is to change the method's implementation to use an if-else statement instead. 
@@ -28,7 +28,7 @@ The method `basicCalculator` takes in an operator and two numbers and returns a 
 Once you are satisfied that you have a functioning calculator that uses if-else statements, add and commit your changes. Make sure you push your changes to GitHub as well! (Remember, since we created a new branch, you will need to run `git push --set-upstream origin useIfElse` to set the upstream branch)
 
 ## Step 4: Your Coworker Makes a Scene!
-In this part, you'll be playing the part of a pesky coworker who decided to ruin the calculator code with lies! Go to your homework 5 respository on the **browser version github**. Click on Test1.java and then on the pencil icon to edit the file in the browser. Replace the basicCalculator function with the following code:
+In this part, you'll be playing the part of a pesky coworker who decided to ruin the calculator code with lies! Go to your homework 4 respository on the **browser version github**. Click on Test1.java and then on the pencil icon to edit the file in the browser. Replace the basicCalculator function with the following code:
 
 ```
 public static double basicCalculator(Operation operation, int num1, int num2){
@@ -60,7 +60,7 @@ At the bottom of the screen, click the green button that says *Commit changes*
 
 ## Step 5: Open a Pull Request
 
-Now that we have pushed our changes to our feature branch, we need to merge these changes into the master branch. In a web browser, navigate to your homework 5 repository. If you did everything correctly up to this point, GitHub should already display the `useIfElse` branch as a recently pushed to branch as shown in the image below: 
+Now that we have pushed our changes to our feature branch, we need to merge these changes into the master branch. In a web browser, navigate to your homework 4 repository. If you did everything correctly up to this point, GitHub should already display the `useIfElse` branch as a recently pushed to branch as shown in the image below: 
 
 ![alt text](images/open_pr.PNG)
 
@@ -78,7 +78,7 @@ Once you have reviewed all the options, click the big green `Create pull request
 
 ## Step 6: Fixing the Merge Conflict
 
-As you can probably guess, you'll more often than not be working on a project with more people than just yourself. With multiple people working in the same files, a phenomenon known as a "merge conflict" is bound to happen. A merge conflict is a instance where a change in another branch cannot be merged automatically by git with the changes you are trying to merge.
+As you can probably guess, you'll more often than not be working on a project with more people than just yourself. With multiple people working in the same files, a phenomenon known as a "merge conflict" is bound to happen. A merge conflict is an instance where a change in another branch cannot be merged automatically by git with the changes you are trying to merge.
 
 ![alt text](https://developer.atlassian.com/blog/2015/01/a-better-pull-request/merge-conflict.png) 
 
@@ -88,9 +88,9 @@ Your new pull request can be found in the pull request tab. After clicking on it
 
 We must fix the merge conflict to merge our feature branch to master. Click on the button that says `Resolve conflicts`.
 
-git tells us the beginning of the merge conflict with a line that looks like this: `<<<<<<< useIfElse` The line immediately following the `useIfElse` line is the version of this line from our feature branch (in this case our `useIfElse` branch). 
+git tells us the beginning of the merge conflict with a line that looks like this: `<<<<<<< useIfElse` The line(s) immediately following the `useIfElse` line is/are the version of this line from our feature branch (in this case our `useIfElse` branch). 
 
-git then displays a line like this: `=======` that signifies the change between the version from the `useIfElse` branch and the *base* branch. In this case, the *base* branch is the master branch in our assignment repository. 
+git then displays a line like this: `=======` that signifies the end of the version from the `useIfElse` branch and the start of the version from the *base* branch. In this case, the *base* branch is the master branch in our assignment repository. 
 
 Immediately following the line of `=` is the version of the change from the *base* branch, and immediately following this line is a line that looks like: `>>>>>>> master`. 
 

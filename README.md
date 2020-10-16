@@ -94,7 +94,7 @@ git then displays a line like this: `=======` that signifies the end of the vers
 
 Immediately following the line of `=` is the version of the change from the *base* branch, and immediately following this line is a line that looks like: `>>>>>>> master`. 
 
-To fix the merge conflict, you need to remove the version of the change that you do not want, and keep the version that you do want. Right now, we want the version that uses case switch statements to implement the calculator functions properly. You also need to remove the line markers that git added: `<<<<<<< useIfElse`, `=======`, and `>>>>>>> master`. 
+To fix the merge conflict, you need to remove the version of the change that you do not want, and keep the version that you do want. Right now, we want the version that uses if-else statements to implement the calculator functions properly. You also need to remove the line markers that git added: `<<<<<<< useIfElse`, `=======`, and `>>>>>>> master`. 
 
 Once you have that done, click the button on the top right that says `mark as resolved`. This will get you a green button that says `Commit merge`. Click this to commit this merge and solve your merge conflict!
 
@@ -102,7 +102,7 @@ Now that the conflict is gone, you will be brought back to the pull request scre
 
 ![alt text](images/yay.PNG)
 
-Click `Merge Pull Request`; this will merge your changes to the master branch. To double check your progress, go back to the master branch and check if your case switch statement is in Test1.java. Good job, you've successfully fixed a merge conflict and merged your feature into the master branch! Your coworker has been fired from your calculator company for messing with the master branch directly.
+Click `Merge Pull Request`; this will merge your changes to the master branch. To double check your progress, go back to the master branch and check if your cif-else statement is in Test1.java. Good job, you've successfully fixed a merge conflict and merged your feature into the master branch! Your coworker has been fired from your calculator company for messing with the master branch directly.
 
 |                        Task                       |    Points    |
 |  ------------------------------------------------ |   ---------  |

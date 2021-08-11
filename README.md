@@ -4,7 +4,7 @@
 In this assignment, you will be adding a feature to a basic calculator function using a feature branch. After you complete your feature, you will learn how to resolve a merge conflict when you try to merge the feature into the master branch. 
  
 ## When is this due?
-This homework will be due on Friday, 3/26.
+This homework will be due on Friday, 11/5.
  
 ## When will I know I'm done?
 Advice: read the steps!!

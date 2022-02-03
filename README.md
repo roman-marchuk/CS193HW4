@@ -115,4 +115,4 @@ Click `Merge Pull Request`; this will merge your changes to the master branch. T
 | **Total**                                         |      20      |
 
 ## Reminder
-As always, feel free to ask questions on piazza, in pso, and/or office hours. Good luck!
+As always, feel free to ask questions on Campuswire, in pso, and/or office hours. Good luck!
